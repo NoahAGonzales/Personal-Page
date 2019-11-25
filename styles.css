@@ -2,6 +2,7 @@
 @font-face { font-family: Noir-medium; src: url('./fonts/Noir/Noir_medium.otf')}
 :root {
    --color0: #0E0B16;
+   --color1: #2EC0F9;
    --color2: #e7dfdd;
    --color3: #A239CA;
    --color4: #4717F6;
@@ -51,11 +52,27 @@ body {
    margin: 0%;
 }
 #introduction-subtitle-text {
-   color: var(--color3);
+   color: var(--color1);
    font-size: 4vw;
    font-family: "Noir-regular";
    letter-spacing: .2vw;
    margin: 0%;
+}
+#animated-arrow-wrapper {
+   height: 8vw;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   animation-duration: 1000ms;
+   animation-name: arrow-animation;
+   animation-iteration-count: infinite;
+   animation-timing-function: steps(4, end);
+}
+#arrow {
+   color: var(--color2);
+   font-family: Noir-regular;
+   font-size: 2vw;
+   transform: rotate(180deg);
 }
 #profile-picture {
    width: 50%; 
@@ -100,7 +117,6 @@ body {
 }
 .full-block {
    width: 70%;
-   
 }
 .half-block {
    width: 50%;
@@ -110,11 +126,26 @@ body {
    color: var(--color3);
    font-size: 3vw; 
    margin: 0%;
-   font-family: "Noir-regluar";
+   font-family: "Noir-regular";
 }
 .half-block-text {
    color: var(--color3);
    font-size: 1.5vw;
-   margin: 0%;
    font-family: "Noir-regular";
+}
+
+
+/*
+   Animations
+*/
+@keyframes arrow-animation {
+   0% {
+      align-items: flex-start;
+   }
+   50% {
+      align-items: center;
+   }
+   100% {
+      align-items: flex-end;
+   }
 }

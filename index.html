@@ -10,10 +10,10 @@
             <a class="navigation-link" href="#introduction">
                <p class="navigation-text">Introduction</p>
             </a>
-            <a class="navigation-link" href="#test">
+            <a class="navigation-link" href="#about">
                <p class="navigation-text">About</p>
             </a>
-            <a class="navigation-link" href="#test">
+            <a class="navigation-link" href="#projects">
                <p class="navigation-text">Projects</p>
             </a>
             <a class="navigation-link" href="#test">
@@ -25,17 +25,41 @@
       <div class="content">
          <a name="introduction"></a>
          <div class="vsection">
-            <p id="introduction-title-text">Hello,<br> I'm Noah!</p>
+            <p id="introduction-title-text">Hello,<br>I'm Noah!</p>
             <p id="introduction-subtitle-text">Scroll down to get to know me!</p>
+            <div id="animated-arrow-wrapper">
+               <p id="arrow">^</p>
+            </div>
          </div>
+
+         <a name="about"></a>
          <div class = "section">
             <img id="profile-picture" src="./images/profile_picture.jpg" alt="Picture of Noah Gonzales">
             <div class="half-block">
-               <p class="half-block-title-text">Title</p>
-               <p class="half-block-text">Hello! I'm Noah. Here's a little about me!</p>
+               <p class="half-block-title-text">About Me</p>
+               <p class="half-block-text">I'm Noah Gonzales. I currently am studying computer science at the University of Texas at Dallas. I love programming, learning, and eating!</p>
             </div>
          </div>
-         <a name="test"></a>
+
+         <a name="projects"></a>
+         <div class = "vsection">     
+            <p class="half-block-title-text">Closet-hangr</p>
+            <p class="half-block-text">
+               Closet-hangr is a mobile app that keeps track of the users' clothing and recommends new ideas for outfits based on the individual's preferences.
+               <br><br>
+               This was a group project created and organized by the Projects division of University of Texas at Dallas chapter of the Association of Computer Machinery. 
+               Teams of 5, led by a project manager and industry mentor, were given 10 weeks to create and present their projects.
+               Work was largely independent and final presentations were given as pitches.
+               Our app placed 2nd, judged by a panel of 5 experienced judges.
+               <br><br>
+               Closet-hangr was built using React-Native, AWS Cognito for authentification, AWS DynamoDB for storage of data on the user, their clothing, and their outfits, and AWS S3 for storage of the images of clothing.
+               <br><br>
+               I was responsible for the system for submitting an article of clothing through the camera or image picker. 
+               I was also responsible for the classification of the clothing after beign submitted, which included identifying the type, intended temperature, and prominent colors.
+               Lastly, I handled the recommendation of clothing to the user based on the most popular types of clothing, the most popular colors, and the current weather.
+            </p>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_GnSsKbwZSu-M8OOEieOOr1eFh1Z7l5P86mJhNqtDHIcdXTxvsQFH0kcRaRACNp5vc7dkEIIJI2fc/embed?start=false&loop=true&delayms=3000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+         </div>
       </div>
 
 
