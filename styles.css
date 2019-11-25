@@ -1,0 +1,120 @@
+@font-face { font-family: Noir-regular; src: url('./fonts/Noir/Noir_regular.otf'); } 
+@font-face { font-family: Noir-medium; src: url('./fonts/Noir/Noir_medium.otf')}
+:root {
+   --color0: #0E0B16;
+   --color2: #e7dfdd;
+   --color3: #A239CA;
+   --color4: #4717F6;
+   /*
+      #7B1E7A
+      #E34A6F
+      #ED1C24
+      #A9DDD6
+      #2EC0F9
+
+   */
+}
+body {
+   background-color: var(--color0);
+   margin: 0;
+}
+#header {
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+}
+#hidden-bar {
+   width: 70%;
+   height: 5%;
+   background-color: var(--color0);
+}
+#hidden-bar-text {
+   font-size: xx-small;
+   margin: 0;
+   color: var(--color0);
+}
+#navigator {
+   width: 70%;
+   position: fixed;
+   text-align: center;  
+   display: flex;
+   justify-content: center;
+   background-color: var(--color0);
+   padding-top: 2%;
+   padding-bottom: 1%;
+}
+#introduction-title-text {
+   color: var(--color3);
+   font-size: 11vw;
+   font-family: "Noir-medium";
+   letter-spacing: .2vw;
+   margin: 0%;
+}
+#introduction-subtitle-text {
+   color: var(--color3);
+   font-size: 4vw;
+   font-family: "Noir-regular";
+   letter-spacing: .2vw;
+   margin: 0%;
+}
+#profile-picture {
+   width: 50%; 
+   height: 100%;
+   border-radius: 50%;
+}
+.navigation-link {
+   padding-left: 3%;
+   padding-right: 3%;
+   text-decoration: none;
+}
+.navigation-text {
+   font-size: 1.2vw;
+   text-transform: uppercase;
+   letter-spacing: .2vw;
+   font-family: "Noir-regular";
+   color: var(--color4);
+   margin: 0;
+   
+}
+.content {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 6%;
+}
+.vsection {
+   width: 70%;
+   margin-top: 2%;
+   display: flex;
+   flex-direction: column;
+   /*background-color: #e7dfdd;*/
+}
+.section {
+   width: 70%;
+   margin-top: 2%;
+   display: flex;
+   flex-direction: row;
+   /*background-color: #e7dfdd;*/
+}
+.full-block {
+   width: 70%;
+   
+}
+.half-block {
+   width: 50%;
+   height: 100%;
+}
+.half-block-title-text {
+   color: var(--color3);
+   font-size: 3vw; 
+   margin: 0%;
+   font-family: "Noir-regluar";
+}
+.half-block-text {
+   color: var(--color3);
+   font-size: 1.5vw;
+   margin: 0%;
+   font-family: "Noir-regular";
+}
