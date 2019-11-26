@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <link rel="stylesheet" href="styles.css">
       <title>Noah Gonzales</title>
+      <meta name="author" content="Noah Gonzales"/>
+      <meta name="description" content="Portfolio of Noah Gonzales"/>
+      <!-- CSS -->
+      <link rel="stylesheet" href="styles.css">
    </head>
    <body>
       <div id="background-color"></div>
       <div id="background-image"></div>
       <div id="header">
-         <div id="navigator">
-            <a class="navigation-link" href="#introduction">
-               <p class="navigation-text">Introduction</p>
+         <nav id="navigator">
+            <a class="navigation-link" href="#home">
+               <p class="navigation-text" id="navigation-introduction-text">Home</p>
             </a>
             <a class="navigation-link" href="#about">
                <p class="navigation-text">About</p>
@@ -18,22 +21,26 @@
             <a class="navigation-link" href="#projects">
                <p class="navigation-text">Projects</p>
             </a>
-            <a class="navigation-link" href="#more">
-               <p class="navigation-text">More</p>
-            </a>
-         </div>
+         </nav>
       </div>
    
       <div class="content">
-         <a name="introduction"></a>
+         <a name="home"></a>
          <div id="title-separator"></div>
 
-         <div class="vsection">
-            <p class="fade-in-introduction-title" id="introduction-title-text">Hello,<br>I'm Noah!</p>
-            <p class="fade-in-introduction-subtitle" id="introduction-subtitle-text">Scroll down to get to know me!</p>
-            <!--<div id="animated-arrow-wrapper">
-               <p id="arrow">^</p>
-            </div>-->
+         <div class="vsection" id="title-section">
+            <p class="fade-in-introduction-title" id="introduction-title-text">ng</p>
+            <span class="section-horizontal-mod">
+               <a class="navigation-link" href="./documents/resume.pdf" target="_blank">
+                  <p class="link-text fade-in-introduction-subtitle">Resume</p>
+               </a>
+               <a class="navigation-link" href="https://github.com/NoahAGonzales" target="_blank">
+                  <p class="link-text fade-in-introduction-subtitle">Github</p>
+               </a>
+               <a class="navigation-link" href="https://www.linkedin.com/in/noahagonzales/" target="_blank">
+                  <p class="link-text fade-in-introduction-subtitle">Linkedin</p>
+               </a>
+            </span>
          </div>
 
          <a name="about"></a>
@@ -48,6 +55,7 @@
          </div>
 
          <a name="projects"></a>
+         
          <div class="separator"></div>
 
          <p class="section-title-text">Projects</p>
@@ -55,49 +63,41 @@
          <div class="subsection-separator"></div>
 
          <div class = "vsection">
-            <div class="section-horizontal-mod">
-               <div>     
+            <div>
+               <div class="section-horizontal-mod section-justify-center-mod">     
                   <p class="half-block-title-text">Closet-hangr</p>
-                  <p class="half-block-text">
-                     Closet-hangr is a mobile app that keeps track of the users' clothing and recommends new ideas for outfits based on the individual's preferences.
-                     <br><br>
+               </div>
+               <p class="half-block-text text-align-center-mod">
+                  Closet-hangr is a mobile app that keeps track of the users' clothing and recommends new ideas for outfits based on the individual's preferences.
+                  <br><br>
+                  Closet-hangr was built using React-Native, AWS Cognito for authentification, AWS DynamoDB for storage of data on the user, their clothing, and their outfits, and AWS S3 for storage of the images of clothing.
+                  <br><br>
+                  I was responsible for the system for submitting an article of clothing through the camera or image picker. 
+                  I was also responsible for the classification of the clothing after being submitted, which included identifying the type, intended temperature, and prominent colors.
+                  Lastly, I handled the recommendation of clothing to the user based on the most popular types of clothing, the most popular colors, and the current weather.
+               </p>
+               <div id="closet-hangr-screens" class="section-horizontal-mod">
+                     <img id="liked-outfits-screen-gif" src="./images/liked-outfits.gif" alt="closet-hangr liked-outfits screen"/>
+                     <img id="home-screen-gif" src="./images/home-page.gif" alt="closet-hangr home screen"/>
+                     <img id="recommendations-screen-gif" src="./images/recommendations.gif" alt="closet-hangr recommendations screen"/>
+               </div>
+            </div>
+            <div class="section-horizontal-mod">
+               <p class="half-block-text text-align-center-mod">
                      This was a group project created and organized by the Projects division of University of Texas at Dallas chapter of the Association of Computer Machinery. 
                      Teams of 5, led by a project manager and industry mentor, were given 10 weeks to create and present their projects.
                      Work was largely independent and final presentations were given as pitches.
                      Our app placed 2nd, judged by a panel of 5 experienced judges.
                      <br><br>
-                     Closet-hangr was built using React-Native, AWS Cognito for authentification, AWS DynamoDB for storage of data on the user, their clothing, and their outfits, and AWS S3 for storage of the images of clothing.
-                     <br><br>
-                     I was responsible for the system for submitting an article of clothing through the camera or image picker. 
-                     I was also responsible for the classification of the clothing after being submitted, which included identifying the type, intended temperature, and prominent colors.
-                     Lastly, I handled the recommendation of clothing to the user based on the most popular types of clothing, the most popular colors, and the current weather.
-                  </p>
-               </div>
-               <div class="section-vertical-mod" id="closet-hangr-group-pictures">
-                  <img id="closet-hangr-group-picture" src="./images/acm-projects-group.JPG"/>
-                  <img id="closet-hangr-group-picture" src="./images/acm-projects-group1.JPG"/>
-               </div>
+               </p>
+               <img id="closet-hangr-group-picture" src="./images/acm-projects-group.JPG"/>
             </div>
-            <div id="closet-hangr-screens" class="section-horizontal-mod">
-               <img id="liked-outfits-screen-gif" src="./images/liked-outfits.gif" alt="closet-hangr liked-outfits screen"/>
-               <img id="home-screen-gif" src="./images/home-page.gif" alt="closet-hangr home screen"/>
-               <img id="recommendations-screen-gif" src="./images/recommendations.gif" alt="closet-hangr recommendations screen"/>
-            </div>
+
+
+
          </div>
 
-         <a name="more"></a>
          <div class="separator"></div>
-
-         <p class="section-title-text">More</p>
-
-         <div class="subsection-separator"></div>
-
-         <a class="navigation-link" href="https://github.com/NoahAGonzales" target="_blank">
-            <p class="more-link">Github</p>
-         </a>
-         <a class="navigation-link" href="https://www.linkedin.com/in/noahagonzales/" target="_blank">
-            <p class="more-link">Linkedin</p>
-         </a>
 
          <p id="logo">ng</p>
       </div>
