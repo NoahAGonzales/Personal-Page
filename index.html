@@ -8,66 +8,64 @@
       <link rel="stylesheet" href="styles.css">
    </head>
    <body>
-      <div id="background-color"></div>
-      <div id="background-image"></div>
+      <div>
+         <div id="background-color"></div>
+         <div id="background-image"></div>
+      </div>
       <div id="header">
          <nav id="navigator">
-            <a class="navigation-link" href="#home">
+            <a class="link navigation-link" href="#home">
                <p class="navigation-text" id="navigation-introduction-text">Home</p>
             </a>
-            <a class="navigation-link" href="#about">
+            <a class="link navigation-link" href="#about">
                <p class="navigation-text">About</p>
             </a>
-            <a class="navigation-link" href="#projects">
+            <a class="link navigation-link" href="#projects">
                <p class="navigation-text">Projects</p>
             </a>
          </nav>
       </div>
-   
-      <div class="content">
-         <a name="home"></a>
-         <div id="title-separator"></div>
 
-         <div class="vsection" id="title-section">
+      <div class="content">
+         <a id="home-anchor" name="home"></a>
+         
+         <div class="vsection section-align-center-mod">
             <p class="fade-in-introduction-title" id="introduction-title-text">ng</p>
             <span class="section-horizontal-mod">
-               <a class="navigation-link" href="./documents/resume.pdf" target="_blank">
-                  <p class="link-text fade-in-introduction-subtitle">Resume</p>
+               <a class="link" href="./documents/resume.pdf" target="_blank">
+                  <p class="external-link-text fade-in-introduction-subtitle">Resume</p>
                </a>
-               <a class="navigation-link" href="https://github.com/NoahAGonzales" target="_blank">
-                  <p class="link-text fade-in-introduction-subtitle">Github</p>
+               <a class="link" href="https://github.com/NoahAGonzales" target="_blank">
+                  <p class="external-link-text fade-in-introduction-subtitle">Github</p>
                </a>
-               <a class="navigation-link" href="https://www.linkedin.com/in/noahagonzales/" target="_blank">
-                  <p class="link-text fade-in-introduction-subtitle">Linkedin</p>
+               <a class="link" href="https://www.linkedin.com/in/noahagonzales/" target="_blank">
+                  <p class="external-link-text fade-in-introduction-subtitle">Linkedin</p>
                </a>
             </span>
          </div>
 
-         <a name="about"></a>
-         <div class="separator"></div>
+         <a class="anchor" id="about-anchor" name="about"></a>
 
-         <div class = "section">
+         <div class = "hsection" id="about-section">
             <img id="profile-picture" src="./images/profile_picture.jpg" alt="Picture of Noah Gonzales">
-            <div class="half-block" id="about-half-block">
+            <div class="half-block">
                <p class="half-block-title-text">About Me</p>
-               <p class="half-block-text">I'm Noah Gonzales. I currently am studying computer science at the University of Texas at Dallas. I love programming, learning, and eating!</p>
+               <p class="half-block-text">
+                  I'm Noah Gonzales. 
+                  I currently am studying computer science at the University of Texas at Dallas. 
+                  I love programming, learning, and eating!</p>
             </div>
          </div>
-
-         <a name="projects"></a>
          
-         <div class="separator"></div>
-
-         <p class="section-title-text">Projects</p>
-
-         <div class="subsection-separator"></div>
+         <a class="anchor" id="projects-anchor" name="projects"></a>
+         <p class="section-title-text" id="projects-section-title-text">Projects</p>
 
          <div class = "vsection">
             <div>
                <div class="section-horizontal-mod section-justify-center-mod">     
                   <p class="half-block-title-text">Closet-hangr</p>
                </div>
-               <p class="half-block-text text-align-center-mod">
+               <p class="half-block-text">
                   Closet-hangr is a mobile app that keeps track of the users' clothing and recommends new ideas for outfits based on the individual's preferences.
                   <br><br>
                   Closet-hangr was built using React-Native, AWS Cognito for authentification, AWS DynamoDB for storage of data on the user, their clothing, and their outfits, and AWS S3 for storage of the images of clothing.
@@ -77,13 +75,13 @@
                   Lastly, I handled the recommendation of clothing to the user based on the most popular types of clothing, the most popular colors, and the current weather.
                </p>
                <div id="closet-hangr-screens" class="section-horizontal-mod">
-                     <img id="liked-outfits-screen-gif" src="./images/liked-outfits.gif" alt="closet-hangr liked-outfits screen"/>
+                     <img class="side-screen-gif" src="./images/liked-outfits.gif" alt="closet-hangr liked-outfits screen"/>
                      <img id="home-screen-gif" src="./images/home-page.gif" alt="closet-hangr home screen"/>
-                     <img id="recommendations-screen-gif" src="./images/recommendations.gif" alt="closet-hangr recommendations screen"/>
+                     <img class="side-screen-gif" src="./images/recommendations.gif" alt="closet-hangr recommendations screen"/>
                </div>
             </div>
             <div class="section-horizontal-mod">
-               <p class="half-block-text text-align-center-mod">
+               <p class="half-block-text">
                      This was a group project created and organized by the Projects division of University of Texas at Dallas chapter of the Association of Computer Machinery. 
                      Teams of 5, led by a project manager and industry mentor, were given 10 weeks to create and present their projects.
                      Work was largely independent and final presentations were given as pitches.
@@ -92,12 +90,8 @@
                </p>
                <img id="closet-hangr-group-picture" src="./images/acm-projects-group.JPG"/>
             </div>
-
-
-
          </div>
-
-         <div class="separator"></div>
+         <div class="subsection-separator"></div>
 
          <p id="logo">ng</p>
       </div>
