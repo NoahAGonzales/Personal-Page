@@ -1,99 +1,145 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Noah Gonzales</title>
-      <meta name="author" content="Noah Gonzales"/>
-      <meta name="description" content="Portfolio of Noah Gonzales"/>
-      <!-- CSS -->
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <div>
-         <div id="background-color"></div>
-         <div id="background-image"></div>
-      </div>
-      <div id="header">
-         <nav id="navigator">
-            <a class="link navigation-link" href="#home">
-               <p class="navigation-text" id="navigation-introduction-text">Home</p>
+
+<head>
+    <title>Noah Gonzales</title>
+    <meta name="author" content="Noah Gonzales">
+    <meta name="description" content="Portfolio of Noah Gonzales">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148399925-1"></script>
+</head>
+
+<body>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <div id="menu">
+        <div id="menu-bg"></div>
+        <nav>
+            <a href="index.html" class="menu-link menu-main-link">
+                <p>Home</p>
             </a>
-            <a class="link navigation-link" href="#about">
-               <p class="navigation-text">About</p>
+            <a href="pages/about.html" class="menu-link menu-main-link">
+                <p>About</p>
             </a>
-            <a class="link navigation-link" href="#projects">
-               <p class="navigation-text">Projects</p>
+            <a href="pages/projects.html" class="menu-link menu-main-link">
+                <p>Projects</p>
             </a>
-         </nav>
-      </div>
-
-      <div class="content">
-         <a id="home-anchor" name="home"></a>
-         
-         <div class="vsection section-align-center-mod">
-            <p class="fade-in-introduction-title" id="introduction-title-text">ng</p>
-            <span class="section-horizontal-mod">
-               <a class="link" href="./documents/resume.pdf" target="_blank">
-                  <p class="external-link-text fade-in-introduction-subtitle">Resume</p>
-               </a>
-               <a class="link" href="https://github.com/NoahAGonzales" target="_blank">
-                  <p class="external-link-text fade-in-introduction-subtitle">Github</p>
-               </a>
-               <a class="link" href="https://www.linkedin.com/in/noahagonzales/" target="_blank">
-                  <p class="external-link-text fade-in-introduction-subtitle">Linkedin</p>
-               </a>
-            </span>
-         </div>
-
-         <a class="anchor" id="about-anchor" name="about"></a>
-
-         <div class = "hsection" id="about-section">
-            <img id="profile-picture" src="./images/profile_picture.jpg" alt="Picture of Noah Gonzales">
-            <div class="half-block">
-               <p class="half-block-title-text">About Me</p>
-               <p class="half-block-text">
-                  I'm Noah Gonzales. 
-                  I currently am studying computer science at the University of Texas at Dallas. 
-                  I love programming, learning, and eating!</p>
+            <div id="other-links">
+                <a class="menu-link menu-other-link">
+                    <p>Resume</p>
+                </a>
+                <a class="menu-link menu-other-link">
+                    <p>Github</p>
+                </a>
+                <a class="menu-link menu-other-link">
+                    <p>Linkedin</p>
+                </a>
             </div>
-         </div>
-         
-         <a class="anchor" id="projects-anchor" name="projects"></a>
-         <p class="section-title-text" id="projects-section-title-text">Projects</p>
+        </nav>
+    </div>
+    <div id="menu-button">
+        <div class="menu-icons" id="menu-icon" onclick="expandMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu-icons" id="x-icon" onclick="closeMenu()">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="orbitals">
+        <!-- Secondary lines-->
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
 
-         <div class = "vsection">
-            <div>
-               <div class="section-horizontal-mod section-justify-center-mod">     
-                  <p class="half-block-title-text">Closet-hangr</p>
-               </div>
-               <p class="half-block-text">
-                  Closet-hangr is a mobile app that keeps track of the users' clothing and recommends new ideas for outfits based on the individual's preferences.
-                  <br><br>
-                  Closet-hangr was built using React-Native, AWS Cognito for authentification, AWS DynamoDB for storage of data on the user, their clothing, and their outfits, and AWS S3 for storage of the images of clothing.
-                  <br><br>
-                  I was responsible for the system for submitting an article of clothing through the camera or image picker. 
-                  I was also responsible for the classification of the clothing after being submitted, which included identifying the type, intended temperature, and prominent colors.
-                  Lastly, I handled the recommendation of clothing to the user based on the most popular types of clothing, the most popular colors, and the current weather.
-               </p>
-               <div id="closet-hangr-screens" class="section-horizontal-mod">
-                     <img class="side-screen-gif" src="./images/liked-outfits.gif" alt="closet-hangr liked-outfits screen"/>
-                     <img id="home-screen-gif" src="./images/home-page.gif" alt="closet-hangr home screen"/>
-                     <img class="side-screen-gif" src="./images/recommendations.gif" alt="closet-hangr recommendations screen"/>
-               </div>
-            </div>
-            <div class="section-horizontal-mod">
-               <p class="half-block-text">
-                     This was a group project created and organized by the Projects division of University of Texas at Dallas chapter of the Association of Computer Machinery. 
-                     Teams of 5, led by a project manager and industry mentor, were given 10 weeks to create and present their projects.
-                     Work was largely independent and final presentations were given as pitches.
-                     Our app placed 2nd, judged by a panel of 5 experienced judges.
-                     <br><br>
-               </p>
-               <img id="closet-hangr-group-picture" src="./images/acm-projects-group.JPG"/>
-            </div>
-         </div>
-         <div class="subsection-separator"></div>
+        <div class="center-cover"></div>
+        <!-- Circles -->
+        <div class="orbital">
+            <div class = "planet"></div>
+        </div>
+        <div class="orbital">
+            <div class = "planet"></div>
+        </div>
+        <div class="orbital">
+            <div class = "planet"></div>
+        </div>
+        <div class="orbital">
+            <div class = "planet"></div>
+        </div>
+        <div class="orbital">
+            <div class = "planet"></div>
+        </div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <!-- Main lines -->
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
 
-         <p id="logo">ng</p>
-      </div>
-   </body>
-</html>
+        <div class="center-cover"></div>
+    </div>
+    <div id="title-wrapper">
+        <h1 id="name">Noah Gonzales</h1>
+        <p class="subtitle">Student</p>
+        <p class="subtitle">Developer</p>
+        <p class="subtitle">Creator</p>
+    </div>
+    <div id="sections">
+        <div id="rocks">
+            <div class="rock rock0"></div>
+            <div class="rock rock1"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+        </div>
+        <div class="section-bubble">
+            <a class="section-title">Noah Gonzales</a>
+        </div>
+        <div class="section-bubble">
+            <h2 class="section-title">Vys-Phys-Convertor</h2>
+        </div>
+        <div class="section-bubble">
+            <h2 class="section-title">Closet-hangr</h2>
+        </div>
+    </div>
+    <script src="js/stickyArea.js"></script>
+    <script src="js/gravitySim.js"></script>
+    <script src="js/menu.js"></script>
+</body>
