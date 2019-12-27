@@ -43,3 +43,23 @@ h1 {
    color: var(--color6);
    font-weight: 800;
 }
+
+#rocks {
+   position: relative;
+   z-index: 0;
+}
+
+.rock {
+   position: absolute;
+   border-radius: 100%;
+   background-color: var(--color3);
+   box-shadow: 0 0 3px 0 var(--color0-0);
+   animation-fill-mode: forwards;
+}
+
+.rock:nth-child(1) {
+   width: 100px;
+   height: 100px;
+   left: 300px;
+   top: 400px;
+}

@@ -33,8 +33,6 @@ let gravitate = function($elementG) {
 
             //Let gravity affect it
             if(distance < width * gravityRange) {
-               console.log(cursor.x, cursor.y, elementPosG.x, elementPosG.y)
-               console.log(cursor.x-elementPosG.x, cursor.y-elementPosG.y)
                onInRange(cursor.x-elementPosG.x, cursor.y-elementPosG.y, distance, width/2)
             }
          })
