@@ -449,6 +449,7 @@ body::-webkit-scrollbar { width: 0 !important }
     text-align: center;
     box-shadow: 0 10px 25px 0 var(--color0-0);
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .section-title {
@@ -457,6 +458,7 @@ body::-webkit-scrollbar { width: 0 !important }
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     font-size: 80px;
+    text-decoration: none;
 
     -webkit-text-stroke: 3px;
     color: rgba(0, 0, 0, 0);

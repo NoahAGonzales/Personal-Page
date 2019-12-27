@@ -438,36 +438,75 @@ h1 {
 }
 
 .section:nth-child(1) {
-   width: 100%;
-   justify-content: center;
+   margin-top: 300px;
+   width: 85%;
+   justify-content: flex-end;
 }
 
 .section:nth-child(2) {
-   width: 100%;
-   justify-content: center;
-   margin-top: -1050px;
+   margin-top: 250px;
+   padding-left: 10%;
+   width: 90%;
+   justify-content: flex-start;
 }
 
 .section-bubble {
-   height: 700px;
-   width: 700px;
+   height: 400px;
+   width: 400px;
    border-radius: 100%;
    text-align: center;
    box-shadow: 0 10px 25px 0 var(--color0-0);
    white-space: nowrap;
+   text-decoration: none;
 }
 
-#section-bubble-about {
-   background-image: url('../images/profile_picture.jpg');
+.section-title {
+   margin-top: 0px;
+   margin-right: 0px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 900;
+   font-size: 80px;
+   text-decoration: none;
+
+   -webkit-text-stroke: 3px;
+   color: rgba(0, 0, 0, 0);
+   -webkit-text-stroke-color: black;
+   letter-spacing: 2px;
+
+   transition: letter-spacing color -webkit-text-stroke font-weight;
+   transition-timing-function: linear linear linear linear;
+   transition-duration: 0.5s;
+}
+
+.section-title:hover {
+   color: var(--color0);
+   -webkit-text-stroke: 0px;
+}
+
+.section-bubble {
+   height: 400px;
+   width: 400px;
+   border-radius: 100%;
+   text-align: center;
+   box-shadow: 0 10px 25px 0 var(--color0-0);
+   white-space: nowrap;
+   text-decoration: none;
+}
+
+#section-bubble-vys-phys-convertor {
+   background-image: url('../images/vys-phys-convertor.png');
    background-size: contain;
 }
 
-.section-text-box {
-   width: 600px;
-   padding: 80px;
-   padding-top: 350px;
-   border-radius: 10px;
-   box-shadow: 0 10px 25px 0 var(--color0-0);
-   background-color: #EBEBEB;
+#section-bubble-vys-phys-convertor > .section-title {
+   margin-left: -200px;
 }
 
+#section-bubble-closet-hangr {
+   background-image: url('../images/hanger.png');
+   background-size: contain;
+}
+
+#section-bubble-closet-hangr > .section-title {
+   margin-left: -50px;
+}
