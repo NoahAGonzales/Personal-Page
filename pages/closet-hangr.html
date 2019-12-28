@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+   <title>Noah Gonzales: Closet-hangr</title>
+   <meta name="author" content="Noah Gonzales">
+   <meta name="description" content="Portfolio of Noah Gonzales">
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="../css/menu.css">
+   <link rel="stylesheet" type="text/css" href="../css/project.css">
+   <!-- JS -->
+   <script src="../js/jquery-3.4.1.js"></script>
+   <script src="../js/TweenMax.min.js"></script>   
+</head>
+<body>
+   <div id="menu">
+      <div id="menu-bg"></div>
+      <nav>
+          <a href="../index.html" class="menu-link menu-main-link">
+              <p>Home</p>
+          </a>
+          <a href="about.html" class="menu-link menu-main-link">
+              <p>About</p>
+          </a>
+          <a href="projects.html" class="menu-link menu-main-link">
+              <p>Projects</p>
+          </a>
+          <div id="other-links">
+              <a class="menu-link menu-other-link" href="documents/resume.pdf" target="_blank">
+                  <p>Resume</p>
+              </a>
+              <a class="menu-link menu-other-link" href="https://github.com/NoahAGonzales" target="_blank">
+                  <p>Github</p>
+              </a>
+              <a class="menu-link menu-other-link" href="https://linkedin.com/in/noahagonzales" target="_blank">
+                  <p>Linkedin</p>
+              </a>
+          </div>
+      </nav>
+  </div>
+  <div id="menu-button">
+      <div class="menu-icons" id="menu-icon" onclick="expandMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <div class="menu-icons" id="x-icon" onclick="closeMenu()">
+          <div></div>
+          <div></div>
+      </div>
+  </div>
+
+  <div id="orbitals">
+      <!-- Secondary lines-->
+      <div class="orbital-line"></div> 
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div> 
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div> 
+      <div class="orbital-line"></div> 
+      <div class="orbital-line"></div> 
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div> 
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+
+      <!-- Circles -->
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <div class="orbital"></div>
+      <!-- Main lines -->
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+      <div class="orbital-line"></div>
+   </div>
+
+   <div id="sections">
+      <h1 id="title">Closet-hangr</h1>
+      <div class="section-bubble" id="closet-hangr-bubble"></div>
+      <div class="description-box">
+         <p>
+             Among the many stresses of life, choosing clothes and managing constantly changing fashions should be the least of a person's worries. 
+             Seeing such a problem with students on campus of the University of Texas at Dallas, having to manage school, a social life, and work, Closet-hangr was created.
+            <br><br>
+            Closet-hangr tracks clothing consistencies and trends among the current users and tailors clothing recommendations based on such, resulting in truly personal recommendations.
+            <br><br>
+            Closet-hangr was built as part of a project-based program organized by the University of Texas at Dallas chapter of the Association of Computing Machinery. 
+            It placed 2nd when judged among 8 other groups by 5 experienced judges.
+            <br><br>
+        </p>
+        <p style="font-size: 13px;">
+            Closet-hangr is not currently deployed, due to the costs of upkeep. I apologize for the inconvenience.
+        </p>
+      </div>
+      <img class="image" src="../images/acm-projects-group1.JPG">
+      <img class="image" src="../images/acm-projects-group.JPG">
+      <img class="image v-gif" src="../images/home-page.gif">
+      <img class="image v-gif" src="../images/liked-outfits.gif">
+      <img class="image v-gif" id="last-image" src="../images/recommendations.gif">
+   </div>
+
+  <!-- Scripts -->
+  <script src="../js/stickyArea.js"></script>
+  <script src="../js/gravitySim.js"></script>
+  <script src="../js/menu.js"></script>
+</body>

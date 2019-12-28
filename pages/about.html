@@ -7,11 +7,11 @@
       <!-- CSS -->
       <link rel="stylesheet" type="text/css" href="../css/about.css">
       <link rel="stylesheet" type="text/css" href="../css/menu.css">
-   </head>
-   <body>
+      <!-- JS -->
       <script src="../js/jquery-3.4.1.js"></script>
       <script src="../js/TweenMax.min.js"></script>
-
+   </head>
+   <body>
       <div id="menu">
          <div id="menu-bg"></div>
          <nav>
@@ -25,13 +25,13 @@
                  <p>Projects</p>
              </a>
              <div id="other-links">
-                 <a class="menu-link menu-other-link">
+                 <a class="menu-link menu-other-link" href="../documents/resume.pdf" target="_blank">
                      <p>Resume</p>
                  </a>
-                 <a class="menu-link menu-other-link">
+                 <a class="menu-link menu-other-link" href="https://github.com/NoahAGonzales" target="_blank">
                      <p>Github</p>
                  </a>
-                 <a class="menu-link menu-other-link">
+                 <a class="menu-link menu-other-link" href="https://linkedin.com/in/noahagonzales" target="_blank">
                      <p>Linkedin</p>
                  </a>
              </div>
@@ -49,9 +49,72 @@
          </div>
       </div>
       <div id="planet">
-         <h1>About</h1>
+         <h1 id="title">About</h1>
+         <div id="rocks">
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+             <div class="rock"></div>
+         </div>
       </div>
-     <script src="../js/menu.js"></script>
-     <script src="../js/stickyArea.js"></script>
+      <div id="orbitals">
+        <!-- Secondary lines-->
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div> 
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <!-- Circles -->
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <div class="orbital"></div>
+        <!-- Main lines -->
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+        <div class="orbital-line"></div>
+      </div>
+      <div id="sections">
+        <div class="section">
+            <div class="section-text-box">
+                <p>I'm Noah Gonzales! I'm currently pursuing a bachelor's degree in computer science at the University of Texas at Dallas. I love learning and am an avid techie. I work toward seeing how technolgy can help others and improve the world.<br><br>I'm currently looking for an internship for the summer of 2020 to gain technical experience and find my way to make an impact.<br><br>Please explore my work and passion to get to know me!</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-bubble" id="section-bubble-about"></div>
+        </div>
+      </div>
+      <script src="../js/menu.js"></script>
+      <script src="../js/stickyArea.js"></script>
+      <script src="../js/gravitySim.js"></script>
    </body>
 </html>
