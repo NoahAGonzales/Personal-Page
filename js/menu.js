@@ -1,10 +1,10 @@
 let expandMenu = function() {
    document.getElementById('menu').style = "width: 100%; height: 100%;"
-   document.getElementById('menu-bg').style = "width:10000px; height: 10000px; margin-left: -5000px; margin-top: -5000px; z-index: 1; transition-delay: 0s;"
+   document.getElementById('menu-bg').style = "width:10000px; height: 10000px; margin-left: -5000px; margin-top: -5000px; z-index: 10; transition-delay: 0s;"
    document.getElementsByTagName('body')[0].style = "overflow-y: hidden;"
-   document.getElementById('menu-icon').style = "opacity: 0; z-index: 2"
-   document.getElementById('x-icon').style = "opacity: 100%; z-index: 3;"
-   document.getElementsByTagName('nav')[0].style = "z-index: 1; width: 100%; height: 80%; opacity: 1; top: 0; left: 0;"
+   document.getElementById('menu-icon').style = "opacity: 0; z-index: 11"
+   document.getElementById('x-icon').style = "opacity: 100%; z-index: 12;"
+   document.getElementsByTagName('nav')[0].style = "z-index: 10; width: 100%; height: 80%; opacity: 1; top: 0; left: 0;"
 
    document.getElementsByClassName('menu-link')[0].style = "opacity: 100%; transition-delay: 0.6s; transition-duration: 0.5s;"
    document.getElementsByClassName('menu-link')[1].style = "opacity: 100%; transition-delay: 0.7s; transition-duration: 0.5s;"
