@@ -450,6 +450,7 @@ body::-webkit-scrollbar { width: 0 !important }
     box-shadow: 0 10px 25px 0 var(--color0-0);
     white-space: nowrap;
     text-decoration: none;
+    z-index: 1;
 }
 
 .section-title {

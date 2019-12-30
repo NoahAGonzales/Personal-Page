@@ -455,6 +455,7 @@ h1 {
    text-align: center;
    box-shadow: 0 10px 25px 0 var(--color0-0);
    white-space: nowrap;
+   z-index: 1;
 }
 
 #section-bubble-about {
