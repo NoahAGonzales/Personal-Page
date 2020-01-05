@@ -651,3 +651,53 @@ body::-webkit-scrollbar { width: 0 !important }
         transform: rotate(-360deg);
     }
 }
+
+@media only screen and (max-device-width: 480px)  {
+    body {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #name {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+    }
+
+    #title-wrapper {
+        margin-left: 50px;
+    }
+
+    #sections {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .section:nth-child(2) {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+    }
+    
+    
+    .section:nth-child(3) {
+        width: 100%;
+        margin-top: 300px;
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+    .section:nth-child(4) {
+        width: 100%;
+        margin-top: 300px;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .section-bubble {
+        width: 250px;
+        height: 250px;
+    }
+}

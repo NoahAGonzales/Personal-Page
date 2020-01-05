@@ -206,3 +206,13 @@ nav {
 #x-icon>div:nth-child(2) {
    transform: rotate(135deg);
 }
+
+
+@media only screen and (max-device-width: 480px) {
+   #menu-button {
+      width: 90px;
+      height: 90px;
+      margin-left: 10px;
+      margin-top: 15px; 
+   }
+}
