@@ -1,0 +1,10 @@
+- "Student developer creator" looks like hyperlinks because it changes size
+Remove the text altogether and have this information in my about?
+
+- Spacing is weird, specifically the white space that you have to scroll past at the beginning of each page
+- Not enough color
+- Maybe make the theme planetary - black and blue
+- looks barebones
+- lines connecting the circles - like a diagram - maybe give them physics
+- bubbles show over the menu background
+- Use babel
